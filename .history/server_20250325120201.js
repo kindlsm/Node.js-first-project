@@ -6,14 +6,12 @@ app.listen(8080, () => {
 })
 
 app.get('/', (요청, 응답) => {
-  응답.sendfile(__dirname+'/index.html')
+  응답.send('반갑다')
 }) 
-
-app.get('/about', (요청, 응답) => {
-    응답.sendfile(__dirname+'/about.html')
-  }) 
 
 app.get('/news', (요청, 응답) => {
     응답.send('오늘 비옴')
   }) 
-  
+  app.get('/news', (요청, 응답) => {
+    응답.send('오늘 비옴')
+  }) 

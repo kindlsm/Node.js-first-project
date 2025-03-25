@@ -10,7 +10,7 @@ app.get('/', (요청, 응답) => {
 }) 
 
 app.get('/about', (요청, 응답) => {
-    응답.sendfile(__dirname+'/about.html')
+    응답.sendfile('')
   }) 
 
 app.get('/news', (요청, 응답) => {

@@ -9,10 +9,6 @@ app.get('/', (요청, 응답) => {
   응답.sendfile(__dirname+'/index.html')
 }) 
 
-app.get('/about', (요청, 응답) => {
-    응답.sendfile(__dirname+'/about.html')
-  }) 
-
 app.get('/news', (요청, 응답) => {
     응답.send('오늘 비옴')
   }) 
