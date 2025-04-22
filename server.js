@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'))
 const { MongoClient } = require('mongodb')
 
 let db
-const url = 'mongodb+srv://user1:flEjUX5H7vzkXLtJ@testcluster.ciipjl5.mongodb.net/?retryWrites=true&w=majority&appName=testcluster'
+const url = '(my seceret!)'
 new MongoClient(url).connect().then((client)=>{
   console.log('DB연결성공')
   db = client.db('forum')
